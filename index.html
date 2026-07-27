@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sephora – Beauty starts here. Shop top makeup, skincare, fragrance and haircare, discover beauty tips, reviews, value sets, gift ideas and more, all with a warm personalized touch.">
+  <title>Sephora – Beauty Starts Here</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://www.sephora.com/img/ufe/icons/ufe-sephora-logo.svg">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation" class="site-nav container">
+      <a href="#" class="logo" aria-label="Sephora homepage"><img src="https://www.sephora.com/img/ufe/icons/ufe-sephora-logo.svg" alt="Sephora logo"></a>
+      <button id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+      <ul id="main-menu" class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#products">Shop</a></li>
+        <li role="none"><a role="menuitem" href="#personalize">Personalized</a></li>
+        <li role="none"><a role="menuitem" href="#education">Learn</a></li>
+        <li role="none"><a role="menuitem" href="#sustainability">Sustainability</a></li>
+        <li role="none"><a role="menuitem" href="#accessibility">Accessibility</a></li>
+        <li role="none"><a role="menuitem" href="#testimonials">Reviews</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Support</a></li>
+      </ul>
+      <div class="nav-actions">
+        <form class="search-bar" role="search" aria-label="Sitewide search">
+          <input type="search" name="search" id="search" placeholder="Search products, brands…" aria-label="Search products" autocomplete="off">
+          <button type="submit" aria-label="Submit search"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="2" fill="none"/><line x1="14.5" y1="14.5" x2="19" y2="19" stroke="currentColor" stroke-width="2"/></svg></button>
+          <div id="predictive-results" aria-live="polite"></div>
+        </form>
+        <a href="https://www.sephora.com/profile/Lists" aria-label="Loves" class="icon-link"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 21s-6.715-5.447-9-9.412C-.813 7.642 2.25 3.611 6.01 4.166 7.987 4.454 10 6.25 10 8.272V8.3c0-2.022 2.013-3.818 3.99-4.106 3.76-.555 6.823 3.476 3.989 7.422C18.714 15.553 12 21 12 21z"/></svg></a>
+        <a href="https://www.sephora.com/basket" aria-label="View basket" class="icon-link"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="2"/><circle cx="20" cy="21" r="2"/><path d="M1 1h4l2.68 13.39c.09.47.5.81.98.81H19a.998.998 0 0 0 .97-.757L23 6H6"/></svg></a>
+        <a href="https://www.sephora.com/profile/BeautyInsider" class="cta-secondary">Sign In</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- HERO -->
+    <section class="hero-gradient">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Unleash Your <span class="accent">Beauty</span>. Embrace Your Power.</h1>
+          <p class="subtitle">Shop the latest makeup, skincare, and fragrance — tailored for everyone, always authentic, always inspiring.</p>
+          <a href="#products" class="cta-primary">Shop Now</a>
+          <div class="hero-ctas">
+            <a href="#personalize" class="cta-secondary">Get Beauty Matched</a>
+            <a href="#education" class="cta-link">Browse Beauty Tips</a>
+          </div>
+        </div>
+        <figure class="hero-img">
+          <img src="https://www.sephora.com/contentimages/2026-07-25_july-lip-promo_site_hp_hero-banner_daily-deal_us-kohls_2833.jpg?imwidth=700" width="440" height="585" alt="Smiling model with luscious lip color, radiating confidence." loading="eager">
+        </figure>
+      </div>
+    </section>
+    
+    <!-- SEARCH HERO (MOBILE)-->
+    <section class="search-hero container">
+      <form class="search-bar prominent-mobile" role="search">
+        <input type="search" name="mobilesearch" placeholder="Search for your next favorite…" aria-label="Mobile Search">
+        <button type="submit" aria-label="Submit search"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="2" fill="none"/><line x1="14.5" y1="14.5" x2="19" y2="19" stroke="currentColor" stroke-width="2"/></svg></button>
+        <div id="mobpredictive-results" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <!-- PRODUCT DISCOVERY -->
+    <section class="section" id="products">
+      <div class="container">
+        <h2>Shop By Category</h2>
+        <nav class="product-categories" aria-label="Product categories">
+          <a href="https://www.sephora.com/shop/makeup-cosmetics" class="cat-card" aria-label="Shop Makeup"><img src="https://www.sephora.com/contentimages/categorybanners/RWD/2024-07-hero-makeup.png?imwidth=180" alt="Palette of makeup colors"><span>Makeup</span></a>
+          <a href="https://www.sephora.com/shop/skincare" class="cat-card" aria-label="Shop Skincare"><img src="https://www.sephora.com/contentimages/categorybanners/RWD/2024-07-hero-skincare.png?imwidth=180" alt="Serum and cream containers"><span>Skincare</span></a>
+          <a href="https://www.sephora.com/shop/fragrance" class="cat-card" aria-label="Shop Fragrance"><img src="https://www.sephora.com/contentimages/categorybanners/RWD/2024-07-hero-fragrance.png?imwidth=180" alt="Perfume bottle"><span>Fragrance</span></a>
+          <a href="https://www.sephora.com/shop/hair-products" class="cat-card" aria-label="Shop Haircare"><img src="https://www.sephora.com/contentimages/categorybanners/RWD/2024-07-hero-haircare.png?imwidth=180" alt="Luxury hair oil"><span>Hair</span></a>
+          <a href="https://www.sephora.com/shop/bath-body" class="cat-card" aria-label="Shop Bath and Body"><img src="https://www.sephora.com/contentimages/categorybanners/RWD/2024-07-hero-bath.png?imwidth=180" alt="Bath and body essentials"><span>Bath & Body</span></a>
+          <a href="https://www.sephora.com/shop/value-sets" class="cat-card" aria-label="Shop Value Sets"><img src="https://www.sephora.com/contentimages/categorybanners/RWD/2024-07-hero-value-sets.png?imwidth=180" alt="Gift and value sets"><span>Value Sets</span></a>
+          <a href="https://www.sephora.com/shop/gifts" class="cat-card" aria-label="Shop Gifts"><img src="https://www.sephora.com/contentimages/categorybanners/RWD/2024-07-hero-gifts.png?imwidth=180" alt="Gift boxes"><span>Gift Ideas</span></a>
+        </nav>
+        <div class="product-guidance">
+          <a href="https://www.sephora.com/beauty/auto-replenish" class="icon-link big-link" aria-label="Convenient shopping: Auto-replenish"> <span>Auto-Replenish</span></a>
+          <a href="https://www.sephora.com/shop/fragrance" class="icon-link big-link" aria-label="Shop Fragrance"><span>Trending Now</span></a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PERSONALIZED BEAUTY -->
+    <section class="section" id="personalize">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Personalized For You</h2>
+            <p>Searching for a match? Let us recommend the best products for your unique skin type, tone, and beauty goals — powered by smart filters and our Beauty Match quiz.</p>
+            <a class="cta-primary" href="https://www.sephora.com/beauty/ai-beauty-chat">Try Beauty Match</a>
+          </div>
+          <div class="personalized-carousel" aria-label="Personalized best sellers">
+            <article class="product-card fadein">
+              <img src="https://www.sephora.com/productimages/sku/s2333607-main-zoom.jpg?imwidth=180" alt="ILIA Super Serum Skin Tint SPF 40" loading="lazy">
+              <div>
+                <h3>ILIA Super Serum Skin Tint SPF 40</h3>
+                <p class="price">$48.00</p>
+                <span class="badge">Best Seller</span>
+                <a href="https://www.sephora.com/product/ilia-super-serum-skin-tint-spf-40-P455418?skuId=2333607" class="cta-secondary">Quicklook</a>
+              </div>
+            </article>
+            <article class="product-card fadein">
+              <img src="https://www.sephora.com/productimages/sku/s2362085-main-zoom.jpg?imwidth=180" alt="Rare Beauty by Selena Gomez Soft Pinch Liquid Blush" loading="lazy">
+              <div>
+                <h3>Rare Beauty Soft Pinch Liquid Blush</h3>
+                <p class="price">$25.00</p>
+                <span class="badge">Award Winner</span>
+                <a href="https://www.sephora.com/product/rare-beauty-by-selena-gomez-soft-pinch-liquid-blush-P97989778?skuId=2362085" class="cta-secondary">Quicklook</a>
+              </div>
+            </article>
+            <article class="product-card fadein">
+              <img src="https://www.sephora.com/productimages/sku/s2319820-main-zoom.jpg?imwidth=180" alt="OUAI Detox Clarifying Shampoo" loading="lazy">
+              <div>
+                <h3>OUAI Detox Clarifying Shampoo</h3>
+                <p class="price">$34.00</p>
+                <a href="https://www.sephora.com/product/ouai-haircare-detox-shampoo-P457223?skuId=2319820" class="cta-secondary">Quicklook</a>
+              </div>
+            </article>
+            <article class="product-card fadein">
+              <img src="https://www.sephora.com/productimages/sku/s1802412-main-zoom.jpg?imwidth=180" alt="Sol de Janeiro Brazilian Bum Bum Cream" loading="lazy">
+              <div>
+                <h3>Brazilian Bum Bum Cream</h3>
+                <p class="price">$48.00</p>
+                <a href="https://www.sephora.com/product/brazilian-bum-bum-visibly-firming-refillable-body-cream-P406080?skuId=1802412" class="cta-secondary">Quicklook</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- BEAUTY EDUCATION -->
+    <section class="section shaded" id="education">
+      <div class="container">
+        <h2>Get Inspired & Learn</h2>
+        <div class="edu-grid">
+          <article class="edu-card fadein">
+            <img src="https://www.sephora.com/contentimages/2024-04-beauty-edu-skincare.jpg?imwidth=220" alt="Skin care expert demonstrating steps on a glowy face">
+            <div>
+              <h3>Skin Care 101</h3>
+              <p>Build your perfect regimen &mdash; layering, active ingredients, and routines for all skin types.</p>
+              <a href="https://www.sephora.com/beauty/best-face-moisturizers" class="cta-link">Learn More</a>
+            </div>
+          </article>
+          <article class="edu-card fadein">
+            <img src="https://www.sephora.com/contentimages/2024-04-beauty-edu-makeup.jpg?imwidth=220" alt="Makeup artist blending eyeshadow on model">
+            <div>
+              <h3>Makeup Tutorials</h3>
+              <p>Step-by-step looks, trending techniques, and how-tos for every occasion and expertise level.</p>
+              <a href="https://www.sephora.com/beauty/new-beauty-products" class="cta-link">Browse Looks</a>
+            </div>
+          </article>
+          <article class="edu-card fadein">
+            <img src="https://www.sephora.com/contentimages/education-hair2.jpg?imwidth=220" alt="Hands applying nourishing hair mask on silky hair">
+            <div>
+              <h3>Beauty Tips & Guides</h3>
+              <p>Our team’s favorite hacks, seasonally curated guides, and dermatologist advice.</p>
+              <a href="https://www.sephora.com/beauty/beauty-offers" class="cta-link">Value Sets & Offers</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <h2>Our Beauty Family Says…</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card fadein" aria-label="Customer Review">
+            <p>“Every order arrives super quick and the samples make it fun to experiment. Love the Beauty Match!”</p>
+            <footer>— <span aria-label="Reviewer">Jasmine, NY</span></footer>
+          </blockquote>
+          <blockquote class="testimonial-card fadein" aria-label="Customer Review">
+            <p>“Shopping by skin type makes it so much easier to find what actually works for me. I finally found my holy grail moisturizer!”</p>
+            <footer>— <span aria-label="Reviewer">Marcus, CA</span></footer>
+          </blockquote>
+          <blockquote class="testimonial-card fadein" aria-label="Customer Review">
+            <p>“The education section taught me so much – and the eco initiatives make me feel good about what I buy here.”</p>
+            <footer>— <span aria-label="Reviewer">Priya, TX</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SUSTAINABILITY & CSR -->
+    <section class="section shaded" id="sustainability">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Better Beauty, Better Planet</h2>
+            <p>From refillable packaging to responsible sourcing and recycling programs &mdash; Sephora is committed to sustainability and supporting inclusivity.</p>
+            <ul class="features">
+              <li><svg width="22" height="22" fill="none" viewBox="0 0 22 22"><circle cx="11" cy="11" r="10" stroke="currentColor" stroke-width="2"/><path d="M6 12l3 3 7-7" stroke="#179269" stroke-width="2" fill="none"/></svg> Refillable & planet-aware product selection</li>
+              <li><svg width="22" height="22" fill="none" viewBox="0 0 22 22"><circle cx="11" cy="11" r="10" stroke="currentColor" stroke-width="2"/><path d="M6 12l3 3 7-7" stroke="#179269" stroke-width="2" fill="none"/></svg> Inclusive hiring & empowerment programs</li>
+              <li><svg width="22" height="22" fill="none" viewBox="0 0 22 22"><circle cx="11" cy="11" r="10" stroke="currentColor" stroke-width="2"/><path d="M6 12l3 3 7-7" stroke="#179269" stroke-width="2" fill="none"/></svg> Carbon-neutral delivery options</li>
+            </ul>
+            <a href="https://www.sephora.com/beauty/refillable-beauty-products" class="cta-primary">Explore Our Initiatives</a>
+          </div>
+          <div class="sustain-img">
+            <img src="https://www.sephora.com/contentimages/2834.jpg?imwidth=360" alt="Eco conscious beauty packaging in bright daylight">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESSIBILITY SECTION -->
+    <section class="section" id="accessibility">
+      <div class="container">
+        <h2>Beauty for Everyone, Accessible to All</h2>
+        <div class="a11y-grid">
+          <div class="a11y-card fadein">
+            <h3>Our Commitments</h3>
+            <ul>
+              <li>All site elements are keyboard navigable — try <kbd>Tab</kbd> to move through menus & <kbd>Enter</kbd> to activate links.</li>
+              <li>Text and backgrounds maintain excellent color contrast (WCAG AA+ checked).</li>
+              <li>Product images include full descriptive alt-text for screen readers.</li>
+              <li>Smooth focus states and ARIA labels for assistive tech.</li>
+              <li>Choose your accessibility preferences: <label class="switch"><input type="checkbox" id="reduce-motion"><span class="slider"></span> Reduce Animations</label></li>
+            </ul>
+           </div>
+          <div class="a11y-card fadein">
+            <h3>Support & Feedback</h3>
+            <p>Need additional help, or have suggestions? <br>
+            <a class="cta-link" href="#contact">Contact customer support</a> or open our live chat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CONTACT & CUSTOMER SUPPORT -->
+    <section class="section" id="contact">
+      <div class="container support-section">
+        <h2>Need Immediate Help?</h2>
+        <p>Our team is here for you! Start a live chat, explore our FAQs, or call us for personalized advice.</p>
+        <div class="contact-cards">
+          <div class="contact-card fadein">
+            <h3>Live Chat</h3>
+            <p>Instant answers and beauty support. Click the chat bubble in the corner, or <a href="#" onclick="window.SephoraChat.open();return false;">open chat now</a>.</p>
+          </div>
+          <div class="contact-card fadein">
+            <h3>Phone</h3>
+            <p><a href="tel:1-877-737-4672">1-877-SEPHORA</a><br> Mon-Sun: 5am–9pm (PST)</p>
+          </div>
+          <div class="contact-card fadein">
+            <h3>Email</h3>
+            <p><a href="mailto:support@sephora.com">support@sephora.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo" aria-label="Sephora homepage"><img src="https://www.sephora.com/img/ufe/icons/ufe-sephora-logo.svg" alt="Sephora logo small"></a>
+        <p class="footer-caption">Empowering beauty. Always authentic.<br><span style="opacity:0.7;font-size:0.97em;">© Sephora 2024</span></p>
+      </div>
+      <nav aria-label="Footer" class="footer-links">
+        <a href="#sustainability">Sustainability</a>
+        <a href="#education">Learn</a>
+        <a href="#accessibility">Accessibility</a>
+        <a href="#contact">Support</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://www.sephora.com/content/privacy-policy" class="meta">Privacy</a>
+        <a href="https://www.sephora.com/about-us" class="meta">About</a>
+        <a href="https://www.sephora.com/jobs" class="meta">Careers</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Chatbot Widget -->
+  <div id="chatbot-widget" aria-live="polite">
+    <button type="button" id="chatbot-toggle" aria-label="Live Chat" aria-controls="chatbot-panel"><svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><circle fill="#fff" stroke="#111" stroke-width="1.5" opacity=".95" cx="12" cy="12" r="12" /><path d="M19 6L5 6C3.9 6 3 6.9 3 8L3 16C3 17.1 3.9 18 5 18L8 18L12 21L16 18L19 18C20.1 18 21 17.1 21 16L21 8C21 6.9 20.1 6 19 6Z" stroke="#E13C68" stroke-width="1.5" fill="#fff" /><circle cx="9" cy="12" r="1" fill="#E13C68" /><circle cx="12" cy="12" r="1" fill="#E13C68" /><circle cx="15" cy="12" r="1" fill="#E13C68" /></svg></button>
+    <aside id="chatbot-panel" class="closed" role="dialog" aria-modal="true" aria-label="Live Chat Panel">
+      <div class="chat-header">
+        <span class="chat-title">Beauty Chat</span>
+        <button id="chatbot-close" aria-label="Close chat panel">×</button>
+      </div>
+      <div id="chatbot-messages" class="chat-messages" tabindex="0" aria-live="polite">
+        <div class="chat-msg bot">Hi! Ask me anything about our services 👋</div>
+      </div>
+      <form id="chatbot-form" class="chat-inputbar" autocomplete="off">
+        <input type="text" id="chatbot-input" aria-label="Type your message" placeholder="Type your question…" autocomplete="off" required />
+        <button type="submit" aria-label="Send message"><svg width="22" height="22" fill="none" viewBox="0 0 22 22"><path d="M2 11L20 2L11 20L11 14L11 14L2 11Z" fill="#E13C68"/></svg></button>
+      </form>
+      <div class="chat-help-links">
+        <a href="http://localhost:5678/webhook/chat" target="_blank" class="cta-link">Webhook & FAQ</a>
+      </div>
+    </aside>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
